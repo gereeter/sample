@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `U48` struct in crate `sample`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, U48">
+
+    <title>sample::types::u48::U48 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../../index.html'>sample</a>::<wbr><a href='../index.html'>types</a>::<wbr><a href='index.html'>u48</a></p><script>window.sidebarCurrent = {name: 'U48', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>sample</a>::<wbr><a href='../index.html'>types</a>::<wbr><a href='index.html'>u48</a>::<wbr><a class='struct' href=''>U48</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-7432' class='srclink' href='../../../src/sample/types.rs.html#72' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct U48(_);</pre><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(val: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;Self&gt;</code></h4>
+<div class='docblock'><p>Construct a new sample if the given value is within range.</p>
+
+<p>Returns <code>None</code> if <code>val</code> is out of range.</p>
+</div><h4 id='method.new_unchecked' class='method'><code>fn <a href='#method.new_unchecked' class='fnname'>new_unchecked</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>) -&gt; Self</code></h4>
+<div class='docblock'><p>Constructs a new sample without checking for overflowing.</p>
+
+<p>This should <em>only</em> be used if the user can guarantee the sample will be within
+range and they require the extra performance.</p>
+
+<p>If this function is used, the sample crate can&#39;t guarantee that the returned sample
+or any interacting samples will remain within their MIN and MAX bounds.</p>
+</div><h4 id='method.inner' class='method'><code>fn <a href='#method.inner' class='fnname'>inner</a>(self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></h4>
+<div class='docblock'><p>Return the internal value used to represent the sample type.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-1' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='struct' href='../../../sample/types/i24/struct.I24.html' title='sample::types::i24::I24'>I24</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-2' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='struct' href='../../../sample/types/i24/struct.I24.html' title='sample::types::i24::I24'>I24</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-3' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='struct' href='../../../sample/types/i48/struct.I48.html' title='sample::types::i48::I48'>I48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-4' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='struct' href='../../../sample/types/i48/struct.I48.html' title='sample::types::i48::I48'>I48</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-5' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-6' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-7' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='struct' href='../../../sample/types/u24/struct.U24.html' title='sample::types::u24::U24'>U24</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-8' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='struct' href='../../../sample/types/u24/struct.U24.html' title='sample::types::u24::U24'>U24</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-9' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-10' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-11' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from_sample_-12' class='method'><code>fn <a href='../../../sample/conv/trait.FromSample.html#method.from_sample_' class='fnname'>from_sample_</a>(s: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(val: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html' title='core::ops::Add'>Add</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.add' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html#method.add' class='fnname'>add</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html' title='core::ops::Sub'>Sub</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-1' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.sub' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html#method.sub' class='fnname'>sub</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html' title='core::ops::Mul'>Mul</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-2' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.mul' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#method.mul' class='fnname'>mul</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html' title='core::ops::Div'>Div</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-3' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.div' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html#method.div' class='fnname'>div</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Not.html' title='core::ops::Not'>Not</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-4' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.not' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Not.html#method.not' class='fnname'>not</a>(self) -&gt; <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html' title='core::ops::Rem'>Rem</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-5' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.rem' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html#method.rem' class='fnname'>rem</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Shl.html' title='core::ops::Shl'>Shl</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-6' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.shl' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Shl.html#method.shl' class='fnname'>shl</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Shr.html' title='core::ops::Shr'>Shr</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-7' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.shr' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Shr.html#method.shr' class='fnname'>shr</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-8' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.bitand' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-9' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.bitor' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output-10' class='type'><code>type Output = <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.bitxor' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, other: Self) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from-1' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(other: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from-2' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(other: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='struct' href='../../../sample/types/u20/struct.U20.html' title='sample::types::u20::U20'>U20</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from-3' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(other: <a class='struct' href='../../../sample/types/u20/struct.U20.html' title='sample::types::u20::U20'>U20</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='struct' href='../../../sample/types/u24/struct.U24.html' title='sample::types::u24::U24'>U24</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from-4' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(other: <a class='struct' href='../../../sample/types/u24/struct.U24.html' title='sample::types::u24::U24'>U24</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt; for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.from-5' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(other: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; Self</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../../../sample/trait.Sample.html' title='sample::Sample'>Sample</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='assoc_type.Signed' class='type'><code>type Signed = <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></h4>
+<h4 id='assoc_type.Float' class='type'><code>type Float = <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a></code></h4>
+<h4 id='method.equilibrium' class='method'><code>fn <a href='../../../sample/trait.Sample.html#method.equilibrium' class='fnname'>equilibrium</a>() -&gt; Self</code></h4>
+<h4 id='method.to_sample' class='method'><code>fn <a href='../../../sample/trait.Sample.html#method.to_sample' class='fnname'>to_sample</a>&lt;S&gt;(self) -&gt; S <span class='where'>where Self: <a class='trait' href='../../../sample/conv/trait.ToSample.html' title='sample::conv::ToSample'>ToSample</a>&lt;S&gt;</span></code></h4>
+<h4 id='method.from_sample' class='method'><code>fn <a href='../../../sample/trait.Sample.html#method.from_sample' class='fnname'>from_sample</a>&lt;S&gt;(s: S) -&gt; Self <span class='where'>where Self: <a class='trait' href='../../../sample/conv/trait.FromSample.html' title='sample::conv::FromSample'>FromSample</a>&lt;S&gt;</span></code></h4>
+<h4 id='method.add_amp' class='method'><code>fn <a href='../../../sample/trait.Sample.html#method.add_amp' class='fnname'>add_amp</a>(self, amp: Self::<a class='trait' href='../../../sample/trait.Sample.html' title='sample::Sample'>Signed</a>) -&gt; Self</code></h4>
+<h4 id='method.mul_amp' class='method'><code>fn <a href='../../../sample/trait.Sample.html#method.mul_amp' class='fnname'>mul_amp</a>(self, amp: Self::<a class='trait' href='../../../sample/trait.Sample.html' title='sample::Sample'>Float</a>) -&gt; Self</code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html' title='core::cmp::Ord'>Ord</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.cmp' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.Ord.html#method.cmp' class='fnname'>cmp</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html' title='core::cmp::PartialOrd'>PartialOrd</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.partial_cmp' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.partial_cmp' class='fnname'>partial_cmp</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/cmp/enum.Ordering.html' title='core::cmp::Ordering'>Ordering</a>&gt;</code></h4>
+<h4 id='method.lt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.lt' class='fnname'>lt</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.le' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.le' class='fnname'>le</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.gt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.gt' class='fnname'>gt</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ge' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html#method.ge' class='fnname'>ge</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../../../sample/types/u48/struct.U48.html' title='sample::types::u48::U48'>U48</a></code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "sample";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../../jquery.js"></script>
+    <script src="../../../main.js"></script>
+    
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>
